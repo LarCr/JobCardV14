@@ -1,0 +1,1 @@
+All images used were obtained under a creative commons licence and were free for modification and redistribution including for comercial purposes. Where modification has taken place, I used Paint.net. Regards, Lar X15031195
