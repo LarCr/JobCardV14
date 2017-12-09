@@ -1,0 +1,45 @@
+﻿@model IEnumerable<JobCardV14.Models.Engineer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EngineerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EngineerEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EngineerPhone)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EngineerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EngineerEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EngineerPhone)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EngId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EngId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EngId })
+        </td>
+    </tr>
+}
+
+</table>

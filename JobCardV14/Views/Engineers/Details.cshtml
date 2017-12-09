@@ -1,0 +1,42 @@
+﻿@model JobCardV14.Models.Engineer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Engineer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EngineerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EngineerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EngineerEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EngineerEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EngineerPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EngineerPhone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EngId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
